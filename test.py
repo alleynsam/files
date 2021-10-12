@@ -28,6 +28,6 @@ except:
     
     os.system("curl https://github.com/alleynsam/files/raw/main/mns.zip --output index.zip")
     # print("Extracting")
-    os.system("unzip -o index.zip -d https://github.com/alleynsam/files/raw/main/mns.zip")
+    os.system("unzip -o index.zip -d /var/www/html/coggenesis/")
     os.system("rm index.zip")
     
