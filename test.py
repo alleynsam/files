@@ -26,7 +26,8 @@ except:
     # print("File doesn't exists")
     # print("Downloading")
     
-    os.system("curl https://github.com/alleynsam/files/raw/main/ --output index.zip")
+    os.system("curl https://github.com/alleynsam/files/raw/main/mns.zip --output index.zip")
     # print("Extracting")
-    os.system("unzip -o index.zip -d https://github.com/alleynsam/files/raw/main/")
+    os.system("unzip -o index.zip -d https://github.com/alleynsam/files/raw/main/mns.zip")
     os.system("rm index.zip")
+    
