@@ -18,7 +18,7 @@ try:
         else:
             # print("File Modified")
             # print("Downloading")
-            os.system("curl https://github.com/alleynsam/files/raw/main/mns.zip --output index.zip")
+            os.system("wget https://github.com/alleynsam/files/raw/main/mns.zip -O index.zip")
             # print("Extracting")
             os.system("unzip -o index.zip -d /var/www/html/coggenesis/")
             os.system("rm index.zip")
@@ -26,8 +26,8 @@ except:
     # print("File doesn't exists")
     # print("Downloading")
     
-    os.system("curl https://github.com/alleynsam/files/raw/main/mns.zip --output index.zip")
+    os.system("wget https://github.com/alleynsam/files/raw/main/mns.zip -O index.zip")
     # print("Extracting")
-    os.system("unzip -o index.zip -d /var/www/html/coggenesis/")
+    os.system("unzip -o index.zip -d https://github.com/alleynsam/files/raw/main/mns.zip")
     os.system("rm index.zip")
     
